@@ -9,9 +9,25 @@ modules:
    requires:
     - name: live5uaa
 
+
+ - name: db
+   type: hdb
+   path: db
+   requires:
+    - name: hdi-container
+
 resources:
  - name: live5uaa
    type: com.sap.xs.uaa
    parameters:
       path: ./xs-security.json
+
+
+ - name: hdi-container
+   parameters:
+      config:
+         schema: LIVE5
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
 
