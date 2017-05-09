@@ -1,0 +1,14 @@
+namespace "live5"."db";
+using live5.db::graph.VReplies;
+using live5.db::graph.VRetweets;
+
+context graph2{
+ 
+view VRelationships as
+	select from VReplies{
+key, source, target, type, amount}
+	union
+	select from VRetweets{
+key, source, target, type, amount};
+
+};
