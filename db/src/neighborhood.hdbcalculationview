@@ -7,6 +7,7 @@
     <variableProperties datatype="VARCHAR" length="255" mandatory="true">
       <valueDomain type="empty"/>
       <selection multiLine="false" type="Single"/>
+      <defaultRange/>
     </variableProperties>
   </variable>
   <variable id="IP_DIRECTION" parameter="true">
@@ -74,7 +75,7 @@
     </shape>
   
     <shape expanded="true" modelObjectName="Graph_1" modelObjectNameSpace="CalculationView">
-      <upperLeftCorner x="100" y="480"/>
+      <upperLeftCorner x="100" y="297"/>
       <rectangleSize height="30" width="140"/>
     </shape>
   </shapes>
