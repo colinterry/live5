@@ -68,7 +68,20 @@ modules:
        name: xsjs_be
        url: ~{service_url}
        forwardAuthToken: true
-       
+
+ - name: uita
+   type: html5
+   path: uita
+   requires:
+    - name: live5uaa
+    - name: xsjs_api
+      group: destinations
+      properties:
+       name: xsjs_be
+       url: ~{service_url}
+       forwardAuthToken: true
+
+
 resources:
  - name: live5uaa
    type: com.sap.xs.uaa
