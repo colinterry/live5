@@ -1,6 +1,6 @@
 ID: live5
 _schema-version: '2.0'
-version: 0.0.1
+version: 1.0.0
 
 modules:
  
@@ -11,8 +11,9 @@ modules:
    requires:
     - name: hdi-container
 
-
  - name: node
+   parameters:
+      memory: 256M
    type: nodejs
    path: node
    requires:
@@ -24,6 +25,8 @@ modules:
         service_url: ${default-url}
 
  - name: xsjs
+   parameters:
+      memory: 256M
    type: nodejs
    path: xsjs
    requires:
@@ -36,6 +39,8 @@ modules:
 
 
  - name: ui
+   parameters:
+      memory: 256M
    type: html5
    path: ui
    requires:
@@ -54,6 +59,8 @@ modules:
        forwardAuthToken: true
 
  - name: uita
+   parameters:
+      memory: 256M
    type: html5
    path: uita
    requires:
