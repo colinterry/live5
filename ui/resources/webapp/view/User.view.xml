@@ -16,9 +16,9 @@
 							</buttons>
 						</RadioButtonGroup>
 						<Label text="Min Level:" id="lblMin" labelFor="sliderMin" design="bold"/>
-						<Slider id="sliderMin" min="0" max="10" value="1" enableTickmarks="true"/>
+						<Slider id="sliderMin" min="0" max="10" value="1" enableTickmarks="true" change="onRefresh"/>
 						<Label text="Max Level:" id="lblMax" labelFor="sliderMax" design="bold"/>
-						<Slider id="sliderMax" min="0" max="10" value="2" enableTickmarks="true"/>
+						<Slider id="sliderMax" min="0" max="10" value="2" enableTickmarks="true" change="onRefresh"/>
 						<Table id="userNeighborhoodList" width="auto" items="{/users}" noDataText="No Users">
 							<columns>
 								<Column>
