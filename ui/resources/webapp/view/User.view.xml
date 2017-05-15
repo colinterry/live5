@@ -8,7 +8,7 @@
 					<l:VerticalLayout width="100%">
 						<PullToRefresh id="pullToRefresh" visible="true" refresh="onRefresh"/>
 						<Label text="Direction:" id="lblDirection" labelFor="radioDirection" design="bold"/>
-						<RadioButtonGroup columns="3" id="radioDirection">
+						<RadioButtonGroup columns="3" id="radioDirection" select="onRefresh">
 							<buttons>
 								<RadioButton groupName="radioDirection" text="Outgoing" selected="true"/>
 								<RadioButton groupName="radioDirection" text="Incoming"/>
